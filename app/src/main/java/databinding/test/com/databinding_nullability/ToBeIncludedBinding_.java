@@ -5,8 +5,10 @@ import android.view.View;
 @SuppressWarnings("unchecked")
 public class ToBeIncludedBinding_ extends android.databinding.ViewDataBinding  {
 
+    //is correct in this case
     @Nullable
     private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    //is correct in this case
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {

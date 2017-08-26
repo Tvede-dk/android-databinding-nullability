@@ -7,8 +7,11 @@ import android.view.View;
 @SuppressWarnings("unchecked")
 public class ActivityMainBinding_ extends android.databinding.ViewDataBinding  {
 
+
+    //WRONG, the generated static initializer would make this NonNull
     @Nullable
     private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    //WRONG, the generated static initializer would make this NonNull
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
@@ -21,6 +24,7 @@ public class ActivityMainBinding_ extends android.databinding.ViewDataBinding  {
         sViewsWithIds.put(R.id.someid, 2);
     }
     // views
+    //WRONG, the constructor assigns this just like anything else, and more code (eg see invalidateAll), assumes this is never null.
     @Nullable
     private final databinding.test.com.databinding_nullability.databinding.ToBeIncludedBinding mboundView0;
     @NonNull
@@ -73,6 +77,7 @@ public class ActivityMainBinding_ extends android.databinding.ViewDataBinding  {
         return variableSet;
     }
 
+    //TODO Missing annotation on "object" ?
     @Override
     protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
         switch (localFieldId) {
